@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: #fff5f5;
+  background-color: white;
   border-bottom: 1px solid #ddd;
 }
 
@@ -18,7 +18,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #00aaff;
+  color: #00B9E8;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -40,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #eaf9ff;
+  background-color: #EEFCFF;
   padding: 60px 40px;
   flex-wrap: wrap;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .hero__text .highlight {
-  color: #00aaff;
+  color:#00B9E8;
 }
 
 .hero__text p {

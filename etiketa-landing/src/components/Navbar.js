@@ -8,7 +8,7 @@ function Navbar() {
         <span>Etiketa</span>
       </div>
       <div className="navbar__links">
-        <a href="#">Cómo funciona</a>
+        <a href="#">Cómo funciona?</a>
         <a href="#">Descargar</a>
       </div>
     </nav>
