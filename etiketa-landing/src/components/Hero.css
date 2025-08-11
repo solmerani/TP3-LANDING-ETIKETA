@@ -1,0 +1,36 @@
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EEFCFF;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.hero__text {
+  max-width: 500px;
+}
+
+.hero__text h1 {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1.2;
+  color: #000;
+}
+
+.hero__text .highlight {
+  color:#00B9E8;
+}
+
+.hero__text p {
+  margin-top: 20px;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.hero__image img {
+  width: 250px;
+  margin-top: 20px;
+}
