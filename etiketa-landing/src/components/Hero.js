@@ -13,7 +13,7 @@ function Hero() {
         </p>
       </div>
       <div className="hero__image">
-        <img src="/cream.png" alt="Producto con código de barras" />
+        <img src="/scanner.png" alt="Producto con código de barras" />
       </div>
     </section>
   );

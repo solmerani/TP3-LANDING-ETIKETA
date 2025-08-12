@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EEFCFF;
   padding: 60px 40px;
   flex-wrap: wrap;
+  background-color: #dff8ff; /* celeste claro */
+  border-top: 1px solid #93D7E6; /* turquesa fuerte para división */
 }
 
 .hero__text {
@@ -13,10 +14,11 @@
 }
 
 .hero__text h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 0;
   line-height: 1.2;
   color: #000;
+  align-items: center;
 }
 
 .hero__text .highlight {
@@ -26,11 +28,13 @@
 .hero__text p {
   margin-top: 20px;
   color: #555;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   line-height: 1.5;
+  align-items: center;
 }
 
 .hero__image img {
   width: 250px;
-  margin-top: 20px;
+  margin-top: 60px;
+  align-items: center;
 }
