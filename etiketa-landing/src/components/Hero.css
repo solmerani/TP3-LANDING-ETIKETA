@@ -3,13 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
+  padding: 80px 100px;
   flex-wrap: wrap;
-  background-color: #dff8ff; /* celeste claro */
+  background-color: #EEFCFF; /* celeste claro */
   border-top: 1px solid #93D7E6; /* turquesa fuerte para división */
+  padding-bottom: 120px; 
 }
 
 .hero__text {
+  flex: 1;
   max-width: 500px;
 }
 

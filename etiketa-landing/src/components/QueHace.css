@@ -1,0 +1,29 @@
+.quehace {
+  background-color: #EEFCFF;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.quehace h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.quehace__cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border: 1px solid #00B9E8;
+  border-radius: 10px;
+  padding: 40px 30px; /* más padding interno */
+  width: 320px; /* un poco más anchas */
+  min-height: 200px; /* altura uniforme */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
