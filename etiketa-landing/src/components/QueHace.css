@@ -18,7 +18,7 @@
 }
 
 .card {
-  background: white;
+  background: transparent;
   border: 1px solid #00B9E8;
   border-radius: 10px;
   padding: 40px 30px; /* más padding interno */
@@ -26,4 +26,37 @@
   min-height: 200px; /* altura uniforme */
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+}
+
+/* Iconos */
+.card .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+/* Título dentro de la card */
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Texto de cada card */
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Texto final de abajo */
+.quehace__footer {
+  margin-top: 60px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }

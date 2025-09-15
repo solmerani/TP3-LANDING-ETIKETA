@@ -1,0 +1,72 @@
+.porque {
+  background-color: #EEFCFF; /* fondo celeste */
+  padding: 60px;
+}
+
+.porque h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.porque__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.porque__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.porque__list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.porque__list img {
+  width: 35px;
+  height: 35px;
+}
+
+.porque__testimonial {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #00bcd4;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-size: 1rem;
+}
+
+.porque__testimonial::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  border: 1px solid #00bcd4;
+  border-bottom: none;
+  border-radius: 50% 50% 0 0;
+  background-color: #eaf8fb;
+}
+
+.porque__testimonial p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.porque__testimonial span {
+  display: block;
+  text-align: right;
+  font-weight: 500;
+}
