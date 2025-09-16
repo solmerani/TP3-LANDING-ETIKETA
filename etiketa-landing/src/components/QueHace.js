@@ -10,18 +10,18 @@ function QueHace() {
       <div className="quehace__cards">
         <div className="card">
           <img src={scanIcon} alt="Escaneo" className="icon" />
-          <h3>Apunta y escanea</h3>
-          <p>Simplemente apunta tu cámara al código de barras del producto</p>
+          <h3>Escaneo instantáneo</h3>
+          <p>Escanea cualquier código de barras en segundos y obtén información instantánea.</p>
         </div>
         <div className="card">
           <img src={alertIcon} alt="Análisis" className="icon" />
-          <h3>Análisis instantáneo</h3>
-          <p>Nuestra IA analiza ingredientes y evalúa la seguridad del producto</p>
+          <h3>Alertas claras</h3>
+          <p>Recibe advertencias fáciles de entender sobre ingredientes y riesgos.</p>
         </div>
         <div className="card">
           <img src={heartIcon} alt="Información" className="icon" />
-          <h3>Información completa</h3>
-          <p>Recibe detalles sobre ingredientes, beneficios y recomendaciones</p>
+          <h3>Alternativas sanas</h3>
+          <p>Descubre opciones más saludables adaptadas a lo que buscas.</p>
         </div>
       </div>
       <p className="quehace__footer">

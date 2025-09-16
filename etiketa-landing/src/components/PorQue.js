@@ -12,7 +12,7 @@ const PorQue = () => {
         <ul className="porque__list">
           <li>
             <img src={checkIcon} alt="check" />
-            <span><u>Base de datos completa</u></span>
+            <span>Base de datos completa</span>
           </li>
           <li>
             <img src={checkIcon} alt="check" />

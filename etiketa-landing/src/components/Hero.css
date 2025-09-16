@@ -1,9 +1,8 @@
 /* Hero */
 .hero {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 100px;
+  gap: 300px;
+  padding: 80px 200px;
   flex-wrap: wrap;
   background-color: #EEFCFF; /* celeste claro */
   border-top: 1px solid #93D7E6; /* turquesa fuerte para división */
@@ -13,14 +12,19 @@
 .hero__text {
   flex: 1;
   max-width: 500px;
+   margin-left: 20px; /* empuja el texto hacia la derecha */
+   min-width: 600px;
+ margin-top: 25px; /* empuja el texto hacia abajo */
+  
 }
 
 .hero__text h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 0;
   line-height: 1.2;
   color: #000;
   align-items: center;
+  ;
 }
 
 .hero__text .highlight {
@@ -28,15 +32,17 @@
 }
 
 .hero__text p {
-  margin-top: 20px;
+  margin-top: 25px;
   color: #555;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   align-items: center;
+  max-width: 900px;
 }
+
 
 .hero__image img {
   width: 250px;
-  margin-top: 60px;
-  align-items: center;
+  margin-top: 15px;   /* más arriba (menos margen arriba) */
+  margin-left: -80px; /* mueve el celular hacia la izquierda */
 }
