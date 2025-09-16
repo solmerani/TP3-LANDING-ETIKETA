@@ -15,6 +15,7 @@ function ComoHace() {
             <span className="number">1</span>
           </div>
           <h3>Escaneá en un click</h3>
+          <p>Simplemente apunta tu cámara al código de barras del producto</p>
         </div>
 
         <img src={flecha} alt="Flecha" className="arrow" />
@@ -26,6 +27,7 @@ function ComoHace() {
             <span className="number">2</span>
           </div>
           <h3>Procesamos la información por ti</h3>
+          <p>Nuestra IA analiza ingredientes y evalúa la seguridad del producto</p>
         </div>
 
         <img src={flecha} alt="Flecha" className="arrow" />
@@ -37,6 +39,7 @@ function ComoHace() {
             <span className="number">3</span>
           </div>
           <h3>Elige con confianza</h3>
+          <p>Recibe detalles sobre ingredientes, beneficios y recomendaciones</p>
         </div>
       </div>
     </section>

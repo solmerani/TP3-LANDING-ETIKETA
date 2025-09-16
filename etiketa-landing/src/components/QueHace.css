@@ -18,7 +18,7 @@
 }
 
 .card {
-  background: transparent;
+  background: white;
   border: 1px solid #00B9E8;
   border-radius: 10px;
   padding: 40px 30px; /* más padding interno */
@@ -37,16 +37,19 @@
 
 /* Título dentro de la card */
 .card h3 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 1.3rem;      /* Un poco más grande */
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;            /* Más oscuro */
 }
 
 /* Texto de cada card */
 .card p {
-  font-size: 0.95rem;
-  color: #555;
-  line-height: 1.4;
+  font-size: 1.05rem;     /* Más grande */
+  color: #444;            /* Más oscuro */
+  margin-bottom: 0;
+  margin-top: 0;
+  line-height: 1.5;
 }
 
 /* Texto final de abajo */

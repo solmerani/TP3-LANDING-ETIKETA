@@ -1,4 +1,5 @@
 import './Hero.css';
+import iphone from '../assets/iphone.png';
 function Hero() {
   return (
     <section className="hero">
@@ -13,7 +14,7 @@ function Hero() {
         </p>
       </div>
       <div className="hero__image">
-        <img src="./iphone.png" alt="Producto con código de barras" />
+        <img src={iphone} alt="Producto con código de barras" />
       </div>
     </section>
   );

@@ -39,7 +39,7 @@
 
 .porque__testimonial {
   position: relative;
-  background: transparent;
+  background: white;
   border: 2px solid #00a9d4;
   border-radius: 15px;
   padding: 50px 30px;  /* más alto (más padding arriba/abajo), menos ancho (menos padding lateral) */
@@ -58,7 +58,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 40px;
-  background-color: #EEFCFF;
+  background-color: white;
   border: 2px solid #00a9d4;
   border-bottom: none;
   border-radius: 50% 50% 0 0;
