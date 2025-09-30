@@ -1,21 +1,24 @@
 /* Hero */
 .hero {
+  position: relative; /* importante */
   display: flex;
   gap: 300px;
   padding: 80px 200px;
   flex-wrap: wrap;
-  background-color: #EEFCFF; /* celeste claro */
-  border-top: 1px solid #93D7E6; /* turquesa fuerte para división */
+  background-color: #EEFCFF;
+  border-top: 1px solid #93D7E6;
   padding-bottom: 120px; 
+  overflow: hidden; /* para que los círculos no se escapen */
+  z-index: 1;
 }
 
 .hero__text {
   flex: 1;
   max-width: 500px;
-   margin-left: 20px; /* empuja el texto hacia la derecha */
-   min-width: 600px;
- margin-top: 25px; /* empuja el texto hacia abajo */
-  
+  margin-left: 20px;
+  min-width: 600px;
+  margin-top: 25px;
+  z-index: 2; /* asegura que quede por encima de los círculos */
 }
 
 .hero__text h1 {
@@ -23,8 +26,6 @@
   margin: 0;
   line-height: 1.2;
   color: #000;
-  align-items: center;
-  ;
 }
 
 .hero__text .highlight {
@@ -36,13 +37,57 @@
   color: #555;
   font-size: 1.8rem;
   line-height: 1.5;
-  align-items: center;
   max-width: 900px;
 }
 
-
 .hero__image img {
   width: 250px;
-  margin-top: 15px;   /* más arriba (menos margen arriba) */
-  margin-left: -80px; /* mueve el celular hacia la izquierda */
+  margin-top: 15px;
+  margin-left: -80px;
+  z-index: 2;
+  position: relative; /* asegura que quede arriba */
+}
+
+/* ====== CÍRCULOS ====== */ 
+.hero-background {
+  position: absolute;
+  inset: 0; /* ocupa todo el fondo */
+  z-index: 0; /* detrás del contenido */
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: pulse-smooth 8s ease-in-out infinite;
+}
+
+/* Ejemplo de círculos de distintos tamaños */
+.circle1 { width: 60px; height: 60px; top: 15%; left: 10%; background: #00B9E8; }
+.circle2 { width: 40px; height: 40px; top: 30%; left: 70%; background: #93D7E6; }
+.circle3 { width: 80px; height: 80px; top: 60%; left: 20%; background: #60a5fa; }
+.circle4 { width: 50px; height: 50px; top: 80%; left: 80%; background: #00B9E8; }
+.circle5 { width: 30px; height: 30px; top: 40%; left: 40%; background: #93D7E6; }
+.circle6 { width: 100px; height: 100px; top: 20%; left: 50%; background: #60a5fa; }
+.circle7 { width: 35px; height: 35px; top: 75%; left: 15%; background: #00B9E8; }
+.circle8 { width: 70px; height: 70px; top: 55%; left: 85%; background: #93D7E6; }
+.circle9 { width: 45px; height: 45px; top: 10%; left: 80%; background: #60a5fa; }
+.circle10 { width: 25px; height: 25px; top: 65%; left: 45%; background: #00B9E8; }
+/* ====== Círculos extra en los extremos ====== */
+.circle11 { width: 40px; height: 40px; top: -10px; left: 20%; background: #60a5fa; }
+.circle12 { width: 55px; height: 55px; bottom: -15px; left: 10%; background: #93D7E6; }
+.circle13 { width: 70px; height: 70px; top: 5%; right: -20px; background: #00B9E8; }
+.circle14 { width: 50px; height: 50px; bottom: -10px; right: 25%; background: #60a5fa; }
+
+/* Animación de respiración */
+@keyframes pulse-smooth {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.4;
+  }
 }
