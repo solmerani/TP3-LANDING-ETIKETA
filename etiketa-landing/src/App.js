@@ -7,13 +7,17 @@ import PorQue from './components/PorQue';
 import Footer from './components/footer';
 function App() {
   return (
-    <div>
+      <div>
       <Navbar />
       <Hero />
       <QueHace />
-      <ComoHace />
+      <div id="como-funciona">
+        <ComoHace />
+      </div>
       <PorQue />
-      <Footer />
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

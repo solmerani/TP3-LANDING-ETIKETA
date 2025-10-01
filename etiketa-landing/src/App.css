@@ -4,3 +4,10 @@ body {
   background-color: #dff8ff;
 }
 
+main {
+  padding-top: 80px; /* deja espacio para el navbar */
+}
+
+html {
+  scroll-behavior: smooth;
+}

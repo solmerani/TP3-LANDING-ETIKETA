@@ -23,12 +23,23 @@
   margin: 0;
 }
 
+/* Items de la lista con animación */
 .porque__list li {
   display: flex;
   align-items: center;
   font-size: 1.8rem;
   margin-bottom: 40px;
   font-weight: 500;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 1s forwards;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .porque__list img {
@@ -37,18 +48,23 @@
   margin-right: 20px;
 }
 
+/* Cuadro testimonial */
 .porque__testimonial {
   position: relative;
   background: white;
   border: 2px solid #00a9d4;
   border-radius: 15px;
-  padding: 50px 30px;  /* más alto (más padding arriba/abajo), menos ancho (menos padding lateral) */
+  padding: 50px 30px;
   font-size: 1.5rem;
-  max-width: 450px;   /* más angosto */
-  min-height: 220px;  /* más alto */
+  max-width: 450px;
+  min-height: 220px;
   box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
 }
 
+.porque__testimonial.rotate {
+  transform: rotateY(360deg);
+}
 
 .porque__testimonial::before {
   content: "";
@@ -74,4 +90,45 @@
   text-align: right;
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+/* efecto typewriter */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #00a9d4;
+  white-space: nowrap;
+  animation: typing 2s steps(30, end), blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #00a9d4;
+  }
+}
+
+/* rotación del globo */
+.spin {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }

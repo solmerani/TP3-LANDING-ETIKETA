@@ -17,11 +17,11 @@ function Hero() {
         <div className="circle circle9 animate-pulse-smooth delay8"></div>
         <div className="circle circle10 animate-pulse-smooth delay9"></div>
         <div className="circle circle11 animate-pulse-smooth delay10"></div>
-        <div className="circle circle12 animate-pulse-smooth delay11"></div>
-        <div className="circle circle13 animate-pulse-smooth delay12"></div>
-        <div className="circle circle14 animate-pulse-smooth delay13"></div>
-      </div>
-
+        <div className="circle circle11 animate-pulse-smooth delay3"></div>
+        <div className="circle circle12 animate-pulse-smooth delay5"></div>
+        <div className="circle circle13 animate-pulse-smooth delay7"></div>
+        <div className="circle circle14 animate-pulse-smooth delay1"></div>
+</div>
       {/* Texto */}
       <div className="hero__text">
         <h1>

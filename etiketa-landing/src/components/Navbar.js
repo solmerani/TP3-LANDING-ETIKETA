@@ -1,4 +1,4 @@
-import './Navbar.css'; // opcional si querés separar los estilos
+import './Navbar.css';
 
 function Navbar() {
   return (
@@ -8,8 +8,8 @@ function Navbar() {
         <span>Etiketa</span>
       </div>
       <div className="navbar__links">
-        <a href="#">Cómo funciona?</a>
-        <a href="#">Descargar</a>
+        <a href="#como-funciona">Cómo funciona?</a>
+        <a href="#footer">Descargar</a>
       </div>
     </nav>
   );
