@@ -1,13 +1,26 @@
 .porque {
-  background-color: #EEFCFF;
-  padding: 80px 120px;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #EEFCFF 0%, #F8FFFF 100%);
+  padding: 100px 120px;
+  font-family: "Poppins", sans-serif;
+  color: #042C3D;
 }
 
 .porque h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 60px;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.porque h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: #00b7e0;
+  border-radius: 2px;
 }
 
 .porque__content {
@@ -23,16 +36,22 @@
   margin: 0;
 }
 
-/* Items de la lista con animación */
+/* ✅ Ítems con iconos más grandes y efecto hover */
 .porque__list li {
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
-  margin-bottom: 40px;
+  font-size: 1.6rem;
+  margin-bottom: 35px;
   font-weight: 500;
   opacity: 0;
   transform: translateX(-20px);
   animation: fadeInLeft 1s forwards;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.porque__list li:hover {
+  transform: translateX(8px);
+  color: #009fc0;
 }
 
 @keyframes fadeInLeft {
@@ -43,56 +62,68 @@
 }
 
 .porque__list img {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   margin-right: 20px;
+  filter: drop-shadow(0 2px 3px rgba(0, 175, 210, 0.2));
 }
 
-/* Cuadro testimonial */
+/* ✅ Cuadro testimonial más moderno */
 .porque__testimonial {
   position: relative;
-  background: white;
-  border: 2px solid #00a9d4;
-  border-radius: 15px;
-  padding: 50px 30px;
-  font-size: 1.5rem;
-  max-width: 450px;
+  background: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 60px 40px;
+  font-size: 1.4rem;
+  max-width: 460px;
   min-height: 220px;
-  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 1s;
+  box-shadow: 0 12px 25px rgba(0, 160, 200, 0.15);
+  transition: transform 1s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 .porque__testimonial.rotate {
-  transform: rotateY(360deg);
+  animation: spinY 1s linear forwards;
 }
 
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* ✅ Globito rediseñado */
 .porque__testimonial::before {
   content: "";
   position: absolute;
-  top: -30px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80px;
-  height: 40px;
+  width: 90px;
+  height: 45px;
   background-color: white;
-  border: 2px solid #00a9d4;
-  border-bottom: none;
   border-radius: 50% 50% 0 0;
+  box-shadow: 0 -3px 0 0 #00b7e0;
 }
 
 .porque__testimonial p {
   margin: 0 0 20px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .porque__testimonial span {
   display: block;
   text-align: right;
-  font-weight: bold;
-  font-size: 1.3rem;
+  font-weight: 600;
+  color: #042C3D;
 }
 
-/* efecto typewriter */
+/* ✅ efecto typewriter */
 .typewriter {
   display: inline-block;
   overflow: hidden;
@@ -111,24 +142,11 @@
 }
 
 @keyframes blink {
-  from, to {
+  from,
+  to {
     border-color: transparent;
   }
   50% {
     border-color: #00a9d4;
-  }
-}
-
-/* rotación del globo */
-.spin {
-  animation: spin 10s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
   }
 }

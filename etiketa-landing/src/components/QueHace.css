@@ -2,64 +2,125 @@
   background-color: #EEFCFF;
   padding: 100px 40px;
   text-align: center;
+  overflow: hidden;
 }
 
 .quehace h2 {
   font-size: 3rem;
-  margin-bottom: 40px;
+  font-weight: 800;
+  margin-bottom: 60px;
   color: #000;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
 }
 
+/* Contenedor de tarjetas */
 .quehace__cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
+/* Cada card */
 .card {
-  background: white;
-  border: 1px solid #00B9E8;
-  border-radius: 10px;
-  padding: 40px 30px; /* más padding interno */
-  width: 320px; /* un poco más anchas */
-  min-height: 200px; /* altura uniforme */
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1.5px solid #00B9E8;
+  border-radius: 14px;
+  padding: 50px 30px;
+  width: 320px;
+  min-height: 230px;
+  box-shadow: 0 5px 15px rgba(0, 185, 232, 0.1);
   text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+/* Hover: efecto sutil */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 185, 232, 0.25);
 }
 
 /* Iconos */
 .card .icon {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 15px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 2px rgba(0, 185, 232, 0.2));
+  transition: transform 0.3s ease;
 }
 
-/* Título dentro de la card */
+.card:hover .icon {
+  transform: scale(1.1);
+}
+
+/* Título */
 .card h3 {
-  font-size: 1.4rem;      /* Un poco más grande */
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 8px;
-  color: #222;            /* Más oscuro */
+  margin-bottom: 10px;
+  color: #000;
 }
 
-/* Texto de cada card */
+/* Texto */
 .card p {
-  font-size: 1.05rem;     /* Más grande */
-  color: #444;            /* Más oscuro */
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 1.5;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
 }
 
-/* Texto final de abajo */
+/* Texto final */
 .quehace__footer {
-  margin-top: 60px;
-  font-size: 1.3rem;
+  margin-top: 70px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #555;
-  max-width: 800px;
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards 1.3s;
+}
+
+/* Animación general */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quehace__cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .quehace h2 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    width: 90%;
+    padding: 40px 25px;
+  }
 }

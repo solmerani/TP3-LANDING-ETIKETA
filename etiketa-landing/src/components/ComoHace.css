@@ -2,25 +2,39 @@
   background-color: #EEFCFF;
   padding: 80px 40px;
   text-align: center;
+  overflow: hidden;
 }
 
 .comohace__steps {
   display: flex;
-  align-items: flex-start;  /* Alinea todos los pasos arriba */
+  align-items: flex-start;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-/* Cada paso */
+/* Animación general */
 .step {
   text-align: center;
-  max-width: 260px; /* más ancho para que entre bien el texto */
+  max-width: 260px;
   flex: 1;
   min-width: 220px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s forwards;
 }
 
-/* Icono dentro de círculo */
+.step:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.step:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.step:nth-child(5) {
+  animation-delay: 1.3s;
+}
+
+/* Círculo con hover animado */
 .icon-container {
   position: relative;
   background-color: #00B9E8;
@@ -31,6 +45,12 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.icon-container:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 185, 232, 0.4);
 }
 
 .icon {
@@ -65,7 +85,7 @@
   margin-bottom: 10px;
 }
 
-/* Texto descriptivo */
+/* Texto */
 .step p {
   font-size: 1rem;
   color: #444;
@@ -73,11 +93,32 @@
   margin: 0 auto;
 }
 
-/* Flechas */
+/* Flechas animadas */
 .arrow {
   width: 60px;
   height: auto;
-  align-self: center; /* centra flecha entre los pasos */
+  align-self: center;
+  animation: bounce 2s infinite;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards, bounce 2s infinite 1.2s;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
 
 /* Responsive */
@@ -88,6 +129,6 @@
   }
 
   .arrow {
-    display: none; /* flechas se ocultan en mobile */
+    display: none;
   }
 }
