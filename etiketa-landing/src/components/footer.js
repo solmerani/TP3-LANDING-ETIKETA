@@ -14,20 +14,24 @@ const Footer = () => {
       ></div>
 
       <div className="footer__content">
-        <h2>
+        <h2 className="fade-in-up">
           Descarga <span className="highlight">Etiketa</span> hoy mismo.
         </h2>
-        <p>
+        <p className="fade-in-up delay-1">
           Únete a miles de usuarios que ya toman decisiones más informadas sobre
-          sus productos de higiene
+          sus productos de higiene.
         </p>
 
-        <div className="footer__stores">
-          <img src={appstore} alt="App Store" className="store-btn" />
-          <img src={googleplay} alt="Google Play" className="store-btn" />
+        <div className="footer__stores fade-in-up delay-2">
+          <img src={appstore} alt="App Store" className="store-btn glow" />
+          <img src={googleplay} alt="Google Play" className="store-btn glow" />
         </div>
 
-        <img src={logo} alt="Logo Etiketa" className="footer__logo" />
+        <img
+          src={logo}
+          alt="Logo Etiketa"
+          className="footer__logo fade-in-up delay-3 spin-slow"
+        />
       </div>
     </footer>
   );

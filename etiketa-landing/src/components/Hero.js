@@ -39,7 +39,9 @@ function Hero() {
         <img src={iphone} alt="Producto con código de barras" />
       </div>
     </section>
+    
   );
+  
 }
 
 export default Hero;
